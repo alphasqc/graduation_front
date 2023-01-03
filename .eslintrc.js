@@ -14,8 +14,9 @@ module.exports = {
   rules: {
     'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
+    'vue/no-v-for-template-key': 'off',
     // 数据类型判断解除
-    '@typescript-eslint/no-inferrable-types': 'off',
+    '@typescript-eslint/no-inferrable-types': ['off'],
     // 单引号限制解除
     quotes: [1, 'single']
   }
