@@ -1,6 +1,6 @@
 <template>
     <div class="main">
-        <div>I'm {{userdata[0]}}</div>
+        <div v-for="item in userdata" :key="item">I'm {{userdata[0]}}</div>
     </div>
 </template>
 
